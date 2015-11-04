@@ -59,7 +59,7 @@ public class Console {
         facade.syncPeopleWithCharts(); // - when people list updated
 
 //        System.out.println(facade.getByName("Guis bro"));
-        System.out.println(facade.getByName("Lena"));
+//        System.out.println(facade.getByName("Katya P"));
 //        System.out.println(facade.getByName("Guis dad"));
 //        System.out.println(facade.getByName("Guis mom"));
 //
@@ -70,14 +70,15 @@ public class Console {
 //        System.out.println(facade.getByName("Ilya"));
 
         horoscopes = new HoroscopesServiceImpl(charts);
-        System.out.println(horoscopes.getNamesByCharacteristicsInSign(new CharacteristicsInSign(Planet.MOON, Sign.PIECES)));
+        System.out.println(horoscopes.getNamesByCharacteristicsInSign(new CharacteristicsInSign(Planet.MOON, Sign.CANCER)));
 //        System.out.println(horoscopes.getNamesByCharacteristicsInSign(new CharacteristicsInSign(Planet.VENUS, Sign.ARIES)));
 //        System.out.println(horoscopes.getNamesByCharacteristicsInSign(new CharacteristicsInSign(Planet.MOON, Sign.GEMINI)));
 
 //        System.out.println(horoscopes.getNamesByDominantElement(Element.AIR));
 
-        System.out.println(horoscopes.getNameAndSignByCharacteristics(Planet.SUN));
+//        System.out.println(horoscopes.getNameAndSignByCharacteristics(Planet.MOON));
 
+        //todo characteristics in element!
 
 
     }
